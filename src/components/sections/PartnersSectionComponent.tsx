@@ -11,7 +11,9 @@ const PartnersSectionComponent = () => {
         <div className="partnersSectionRow">
           <div style={{ width: "100%" }}>
             <div className="partnersSectionHeader">
-              <h2 className="title">Partnyorlar</h2>
+              <h2 className="title" style={{ color: "#fff" }}>
+                Partnyorlar
+              </h2>
               <p className="partnersSectionText">
                 Helping leaders to create and transform products, brand
                 experiences, and customer relationships.

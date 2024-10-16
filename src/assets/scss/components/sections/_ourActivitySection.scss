@@ -1,20 +1,20 @@
 .OurActivity {
   width: 100%;
   margin-bottom: 80px;
-  .container {
-    .OurActivityContents {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      .OurActivityHeader {
-        width: 100%;
-        text-align: center;
-        margin: 80px 0;
-      }
+  .OurActivityHeader {
+    width: 100%;
+    text-align: center;
+    margin: 80px 0;
+  }
+  .OurActivityContents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4fde7;
+    .container {
       .OurActivityCardBox {
-        background-color: #e4fde7;
         padding: 80px 0;
         width: 100%;
         display: flex;

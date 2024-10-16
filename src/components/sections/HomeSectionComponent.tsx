@@ -1,4 +1,4 @@
-import homeScreenLeftImg from "../../assets/images/homeScreenLeftImg.png";
+import homeScreenLeftImg from "../../assets/images/homeSectionImage.png";
 
 const HomeSectionComponent = () => {
   return (

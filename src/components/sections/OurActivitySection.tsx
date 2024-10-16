@@ -6,11 +6,11 @@ import activtyImg3 from "../../assets/images/activtyImg3.png";
 const OurActivitySection = () => {
   return (
     <section className="OurActivity">
-      <div className="container">
-        <div className="OurActivityContents">
-          <div className="OurActivityHeader">
+         <div className="OurActivityHeader">
             <h2 className="title">Fəaliyyətimiz</h2>
           </div>
+      <div className="OurActivityContents">
+      <div className="container">
           <div className="OurActivityCardBox">
             <OurActivityCard
               bgColor={"#fff"}

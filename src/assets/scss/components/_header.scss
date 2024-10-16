@@ -1,8 +1,9 @@
 .header {
   width: 100%;
+
   .headerTop {
     width: 100%;
-    background: #587abc;
+    background: linear-gradient(90deg, #587abc 9%, #01c3cd 86%);
     height: 60px;
     .container {
       .row {
@@ -39,6 +40,7 @@
           justify-content: space-between;
           gap: 90px;
           .navLinkItem {
+            color: #fff;
             font-size: 14px;
             font-weight: 700;
             line-height: 16.94px;

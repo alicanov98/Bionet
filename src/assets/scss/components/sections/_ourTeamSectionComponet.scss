@@ -1,12 +1,13 @@
 .OurTeamSectionComponent {
   width: 100%;
+  background-color: #e1f5f3;
   .container {
     .OurTeamSectionComponentContents {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      background-color: #e1f5f3;
-      padding: 74px 99px;
+      padding: 74px 0;
+      justify-content: space-between;
       .OurTeamSectionComponentContext {
         max-width: 50%;
         text-align: left;
@@ -15,7 +16,6 @@
         justify-content: center;
         flex-direction: column;
         max-height: 400px;
-        padding-right: 60px;
         gap: 24px;
         .OurTeamSectionComponentDescription {
           max-width: 439px;

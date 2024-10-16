@@ -1,6 +1,7 @@
 .partnersSectionComponent {
   width: 100%;
-  margin-top: 80px;
+  background: linear-gradient(90deg, #587abc 9%, #01c3cd 86%);
+  padding-bottom: 80px;
   .container {
     .partnersSectionRow {
       width: 100%;
@@ -14,21 +15,24 @@
         flex-direction: column;
         align-items: center;
         gap: 24px;
-        margin-bottom: 80px;
+        margin-bottom: 24px;
         .partnersSectionText {
           font-size: 16px;
           font-weight: 400;
           line-height: 19.36px;
           text-align: center;
+          color: #fff;
         }
       }
       .partnersSectionLogos {
+        background-color: #fff;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10;
+        padding: 53px;
+        gap: 10px;
         .partnersSectionTop {
           width: 100%;
           height: 124px;
