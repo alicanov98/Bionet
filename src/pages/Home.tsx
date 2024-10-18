@@ -11,7 +11,7 @@ import Footer from "components/Footer";
 
 const Home = () => {
   return (
-    <main>
+    <main >
       <HomeSectionComponent />
       <PartnersSectionComponent />
       <OurlatestProjectsSectionComponent />

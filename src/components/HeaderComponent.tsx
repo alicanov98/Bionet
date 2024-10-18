@@ -23,18 +23,31 @@ const HeaderComponent = () => {
         };
       default:
         return {
-          logo: LogoTwo,
-          style: { backgroundColor: "#fff" },
-          color: "#000",
+          logo: Logo,
+          style: {
+            background: "linear-gradient(90deg, #587abc 9%, #01c3cd 86%)",
+          },
+          color: "#fff",
         };
     }
   };
 
   const { logo, style, color } = getHeaderStyleAndLogo();
 
+  const navItems = [
+    { path: "/", label: "Home" },
+    { path: "/ProjectsPage", label: "Projects" },
+    { path: "/servicesPage", label: "Services" },
+    { path: "/aboutPage", label: "About" },
+    { path: "/contactsPage", label: "Contacts" },
+  ];
+
   return (
     <header className="header">
-      <div className="headerTop">
+      <div
+        className="headerTop"
+        style={{ display: location ? "none" : "flex" }}
+      >
         <div className="container">
           <div className="row">
             <div className="headerTopContext">
@@ -97,47 +110,23 @@ const HeaderComponent = () => {
               <img src={logo} alt="Bionet Logo" />
             </a>
             <ul className="navList">
-              <li className="navItem" style={{ margin: "10px 0" }}>
-                <a className="navLinkItem" href="./" style={{ color: color }}>
-                  Home
-                </a>
-              </li>
-              <li className="navItem" style={{ margin: "10px 0" }}>
-                <a
-                  className="navLinkItem"
-                  href="./ProjectsPage"
-                  style={{ color: color }}
+              {navItems.map((item) => (
+                <li
+                  className="navItem"
+                  style={{ margin: "10px 0" }}
+                  key={item.label}
                 >
-                  Projects
-                </a>
-              </li>
-              <li className="navItem" style={{ margin: "10px 0" }}>
-                <a
-                  className="navLinkItem"
-                  href="./servicesPage"
-                  style={{ color: color }}
-                >
-                  Services
-                </a>
-              </li>
-              <li className="navItem" style={{ margin: "10px 0" }}>
-                <a
-                  className="navLinkItem"
-                  href="./aboutPage"
-                  style={{ color: color }}
-                >
-                  About
-                </a>
-              </li>
-              <li className="navItem" style={{ margin: "10px 0" }}>
-                <a
-                  className="navLinkItem"
-                  href="./contactsPage"
-                  style={{ color: color }}
-                >
-                  Contacts
-                </a>
-              </li>
+                  <a
+                    className="navLinkItem"
+                    href={item.path}
+                    style={{
+                      color: location.pathname === item.path ? "black" : color,
+                    }}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
             </ul>
             <div className="navLeft">
               <IoSearch size={24} color={color} />

@@ -1,3 +1,4 @@
+import Input from "components/ui/input";
 import React, { useState } from "react";
 
 const PriceQuoteSection = () => {
@@ -25,36 +26,23 @@ const PriceQuoteSection = () => {
           </div>
           <form className="form" onSubmit={handleSubmit}>
             <div className="formInput">
-              <div className="formGroup">
-                <label className="lableInput" htmlFor="name">
-                  Ad və soyadınız
-                </label>
-                <input
-                  className="formInputGrop"
-                  type="text"
-                  id="name"
-                  value={name}
-                  placeholder="Adınızı və soyadınızı daxil edin"
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="formGroup">
-                <label className="lableInput" htmlFor="number">
-                  Əlaqə nömrəniz
-                </label>
-                <input
-                  className="formInputGrop"
-                  placeholder="Əlaqə nömrənizi daxil edin"
-                  type="text"
-                  id="number"
-                  value={number}
-                  onChange={(e) => setNumber(e.target.value)}
-                  required
-                />
-              </div>
+              <Input
+                id={"name"}
+                change={name}
+                setValue={setName}
+                type={"text"}
+                lable={"Ad və soyadınız"}
+                placheHolder={"Adınızı daxil edin"}
+              />
+              <Input
+                id={"number"}
+                change={number}
+                setValue={setNumber}
+                type={"text"}
+                lable={"Əlaqə nömrəniz"}
+                placheHolder={"Əlaqə nömrənizi daxil edin"}
+              />
             </div>
-
             <div className="formTextArea">
               <label className="lableInput" htmlFor="message">
                 Necə bir məhsul istəyirsiz
@@ -68,10 +56,11 @@ const PriceQuoteSection = () => {
                 required
               />
             </div>
-<div className="PriceQuoteFormBtnContainer">
-<button className="PriceQuoteFormBtn" type="submit">Gönder</button>
-</div>
-            
+            <div className="PriceQuoteFormBtnContainer">
+              <button className="PriceQuoteFormBtn" type="submit">
+                Gönder
+              </button>
+            </div>
           </form>
         </div>
       </div>
