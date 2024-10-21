@@ -51,6 +51,29 @@
     padding: 0;
   }
 }
+.formGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.formGroup .formInputGroup {
+  width: 100%;
+  height: 48px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3137254902);
+}
+
+.lableInput {
+  color: rgba(0, 0, 0, 0.3137254902);
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.1px;
+  text-align: left;
+}
+
 .header {
   width: 100%;
 }
@@ -302,8 +325,7 @@
   height: auto; /* Yüksekliği otomatik yaparak orantılı kalmasını sağla */
   max-width: 150px; /* Konteyner genişliğini aşmamasını sağla */
   max-height: 150px; /* Konteyner yüksekliğini aşmamasını sağla */
-  -o-object-fit: contain;
-     object-fit: contain; /* Resmin orantılarını koruyarak alanı doldurmasını sağla */
+  object-fit: contain; /* Resmin orantılarını koruyarak alanı doldurmasını sağla */
 }
 
 .OurlatestProjectsSectionComponent {
@@ -329,8 +351,7 @@
   height: auto;
   max-width: 50%;
   max-height: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .DevelopmentOfWebsites {
@@ -372,8 +393,7 @@
   height: auto;
   max-width: 142px;
   max-height: 142px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .DevelopmentOfWebsites .container .DevelopmentOfWebsitesContents .DevelopmentOfWebsitesCardBox .DevelopmentOfWebsitesCard .DevelopmentOfWebsitesCardContent {
   display: flex;
@@ -442,8 +462,7 @@
 .OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentCardBox .OurTeamSectionComponentImageLeft .personCard .personImage {
   width: 100%;
   height: 160px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .OurTeamSectionComponent .container .OurTeamSectionComponentContents .OurTeamSectionComponentCardBox .OurTeamSectionComponentImageLeft .personCard .personName {
   font-size: 14px;
@@ -507,8 +526,7 @@
   height: auto;
   max-width: 142px;
   max-height: 142px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .OurActivity .OurActivityContents .container .OurActivityCardBox .OurActivityCard .OurActivityCardContent {
   display: flex;
@@ -570,8 +588,7 @@
   height: auto;
   max-width: 142px;
   max-height: 142px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .OurServicesSection .container .OurServicesSectionContents .OurServicesSectionCardBox .OurServicesSectionCard .OurServicesSectionCardContent {
   display: flex;
@@ -629,19 +646,6 @@
   justify-content: center;
   gap: 24px;
 }
-.priceQuoteSection .container .priceQuoteContent .form .formInput .formGroup {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.priceQuoteSection .container .priceQuoteContent .form .formInput .formGroup .formInputGrop {
-  width: 100%;
-  height: 48px;
-  padding: 10px;
-  gap: 10px;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.3137254902);
-}
 .priceQuoteSection .container .priceQuoteContent .form .formTextArea {
   margin-top: 24px;
   width: 100%;
@@ -675,15 +679,6 @@
   align-items: center;
 }
 
-.lableInput {
-  color: rgba(0, 0, 0, 0.3137254902);
-  margin-bottom: 4px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 19.1px;
-  text-align: left;
-}
-
 .aboutOurCompany {
   width: 100%;
   margin: 80px 0;
@@ -698,12 +693,11 @@
   padding: 40px;
 }
 .aboutOurCompany .container .row .aboutOurCompanyContentLeft .aboutOurCompanyContentLeftTitle {
-  background-color: blue;
   font-size: 24px;
   font-weight: 700;
   line-height: 29.05px;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 32px;
 }
 .aboutOurCompany .container .row .aboutOurCompanyContentLeft .aboutOurCompanyContentLeftText {
   font-size: 14px;
@@ -737,4 +731,133 @@
   font-weight: 400;
   line-height: 16.94px;
   text-align: center;
-}/*# sourceMappingURL=index.css.map */
+}
+
+.contactUs {
+  width: 100%;
+  margin: 80px 0;
+}
+.contactUs .container .contactUsTextandTitle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+.contactUs .container .contactUsTextandTitle .contactUsText {
+  width: 50%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.36px;
+  text-align: center;
+}
+.contactUs .container .row {
+  gap: 40px;
+}
+.contactUs .container .row .map {
+  width: 50%;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+.contactUs .container .row .writeUs {
+  width: 50%;
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+}
+.contactUs .container .row .writeUs .writeUsTitle {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.74px;
+  text-align: center;
+}
+.contactUs .container .row .writeUs .formInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.contactUs .container .row .writeUs .formTextArea {
+  margin-top: 24px;
+  width: 100%;
+}
+.contactUs .container .row .writeUs .formTextArea .formTextarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3137254902);
+  height: 124px;
+  resize: none;
+  margin-top: 4px;
+}
+.contactUs .container .row .writeUs .PriceQuoteFormBtnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 40px;
+}
+.contactUs .container .row .writeUs .PriceQuoteFormBtnContainer .PriceQuoteFormBtn {
+  display: flex;
+  width: 273px;
+  height: 56px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #008b85;
+  color: #fff;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+}
+.contactUs .container .contactUsBottom {
+  width: 100%;
+  background-color: #e1f5f3;
+  padding: 60px 135px;
+  margin: 80px 0;
+  border-radius: 10px;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox {
+  width: 100%;
+  display: flex;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox .contactUsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  gap: 9px;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox .contactUsCard .contactUsCardtitle {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.1px;
+  text-align: center;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox .contactUsCard .imgContactContainer {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox .contactUsCard .imgContactContainer .imgContact {
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.contactUs .container .contactUsBottom .contactUsCardBox .contactUsCard .contactUsCardInfoText {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.1px;
+  text-align: center;
+  width: 50%;
+}
+
+/*# sourceMappingURL=index.css.map */
